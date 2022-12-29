@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    position: relative;
+    background-color: rgb(220, 212, 135);
+}
+.card{
+    position: absolute;
+    height: 400px;
+    width: 280px;
+    background-color: rgb(103, 184, 157);
+    top: 130px;
+    left: 40%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: rgb(140, 60, 214);
+    backface-visibility: hidden;
+    
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: rgb(90, 138, 215);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+h3{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin-left: 65px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+.name{
+    text-align: center;
+    margin-top: 20px;
+}
+h5{
+    text-align: center;
+    margin-top: 10px;
+}
+.id{
+    text-align: center;
+    margin-top: 20px;
+}
+h4{
+    margin-top: 30px;
+    text-align: center;
+}
+p{
+    margin-top: 30px;
+    line-height: 1.5;
+}
+button{
+    text-align: center;
+    margin-top: 40px;
+    border: none;
+    padding: 15px 40px;
+    margin-left: 30%;
+    margin-top: 50px;
+    background-color: rgb(216, 15, 115);
+    color: white;
+}
